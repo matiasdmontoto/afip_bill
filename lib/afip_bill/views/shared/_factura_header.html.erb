@@ -56,7 +56,6 @@
       width: 595px;
       height: 842px;
       overflow: hidden;
-      /*border: 1px solid grey;*/
     }
 
     span.cls_003, div.cls_003, span.cls_009, div.cls_009, span.cls_004, div.cls_004, span.cls_010, div.cls_010,
@@ -187,7 +186,7 @@
   <div style="left:21.00px;top:189.59px" class="cls_002"><span class="cls_002">DNI:</span></div>
   <div style="left:52.00px;top:189.59px" class="cls_006"><span class="cls_006"><%= afip_bill["doc_num"] %></span></div>
   <div style="left:205.97px;top:189.59px" class="cls_002"><span class="cls_002">Apellido y Nombre / Razón Social:</span></div>
-  <div style="left:354.00px;top:190.63px" class="cls_008"><span class="cls_008"><%= bill_type == "a" ? user.company_name : user.owner_name %></span></div>
+  <div style="left:354.00px;top:190.63px" class="cls_008"><span class="cls_008"><%= bill_type == "a" ? " #{user.company_name}" : " #{user.owner_name}" %></span></div>
   <div style="left:21.00px;top:208.59px" class="cls_002"><span class="cls_002">Condición frente al IVA:</span></div>
   <div style="left:131.00px;top:208.59px" class="cls_006"><span class="cls_006"><%= user.tax_category %></span></div>
   <div style="left:262.48px;top:208.59px" class="cls_002"><span class="cls_002">Domicilio Comercial:</span><span class="cls_008"> <%= user.address %></span></div>
